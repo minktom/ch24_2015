@@ -1,0 +1,1 @@
+Wall = Struct.new(:p1, :p2)
