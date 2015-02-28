@@ -1,0 +1,5 @@
+
+task :test do
+  $LOAD_PATH.unshift('.')
+  Dir.glob('./*_test.rb') { |f| require f }
+end
