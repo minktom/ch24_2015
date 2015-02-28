@@ -42,7 +42,13 @@ module TaskA
     end
 
     def process
-      @cases.first.solve
+      @cases.each_with_index do |c, i|
+        puts "-" * 100
+        puts "case ##{i}"
+        puts "-" * 100
+
+        c.solve
+      end
     end
 
     def dump
